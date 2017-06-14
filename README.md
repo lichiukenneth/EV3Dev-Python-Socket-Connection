@@ -1,7 +1,7 @@
 # EV3Dev-Python-Socket-Connection
 Control EV3 Brick installed with EV3Dev remotely using Client Server Socket Connection
-
-1. Introduction
+</br></br></br>
+<B>1. Introduction</B>
 
 1.1 The Socket Server is a Windows Form running in Visual Studio 2017 Community, written by Python with IronPython 2.7 (32 bit)
 
@@ -14,8 +14,8 @@ Control EV3 Brick installed with EV3Dev remotely using Client Server Socket Conn
 1.5 The connection can be done in 2 ways, 1: Connect your EV3 Brick to the PC using the USB Cable.  2: Connect your EV3 Brick to the internet, using your Mobile Phone network via Bluetooth, and connect your PC to the internet using WIFI or LAN, which means that your PC can control the EV3 Brick over Internet.
 
 
-
-2. Steps to establish Client Server Socket Connection between your PC and your EV3 Brick using USB cable:
+</br></br></br>
+<B>2. Steps to establish Client Server Socket Connection between your PC and your EV3 Brick using USB cable:</B>
 
 2.1 Install Visual Studio 2017 Community with Python support in your PC.
 
@@ -47,8 +47,8 @@ Control EV3 Brick installed with EV3Dev remotely using Client Server Socket Conn
 
 2.15 Click "Disconnect" in your PC, the socket client will stop.
 
-
-3. Steps to establish Client Server Socket Connection between your PC and your EV3 Brick over the internet:
+</br></br></br>
+<B>3. Steps to establish Client Server Socket Connection between your PC and your EV3 Brick over the internet:</B>
 
 3.1 In your router, set a static ip address to your PC, e.g. 192.168.1.88
 
