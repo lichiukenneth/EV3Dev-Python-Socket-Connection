@@ -48,3 +48,26 @@ Control EV3 Brick installed with EV3Dev remotely using Client Server Socket Conn
 2.15 Click "Disconnect" in your PC, the socket client will stop.
 
 
+3. Steps to establish Client Server Socket Connection between your PC and your EV3 Brick over the internet:
+
+3.1 In your router, set a static ip address to your PC, e.g. 192.168.1.88
+
+3.2 In your router, use the NAT or the Virtual Server function, redirect the external port 8070 to the ip address of your PC
+
+3.3 Do 2.1 to 2.4
+
+3.4 Do not connect EV3 Brick to your PC with the USB cable, detach it!   Connect your Android Mobile Phone to the internet using the Mobile Network (Do not use WIFI to connect the mobile phone)  You CANNOT use iPhone!!!
+
+3.5 In your mobile phone setting, Turn On Bluetooth, and Turn On "Share your internet access via BlueTooth", go back to the BlueTooth Setting Page, set your bluetooth visible to the others.
+
+3.6 In your EV3 Brick, select "Wireless and Network", select "Bluetooth", select "Powered" to turn the bluetooth on, then select "Start Scan"
+
+3.7 You should see the name of your mobile phone, click it.  Then pair it!  To do so, you need to press accept in your mobile phone, and press accept in your EV3 Brick.
+
+3.8 In your EV3 Brick, Go back to the Wireless and Network, you should see the status: Online.  However, if you see "Connected" instead of "Online", you need to unpair the bluetooth between your EV3 and your mobile phone, and repeat step 3.5 to 3.7, try a few more times, you should see "Online" finally!  And yes, this is a bug in EV3Dev, you should see "Online" instead of "Connected".  "Connected" means your EV3 is connected to the mobile phone but cannot access the internet.  "Online" means your EV3 Brick can access the internet.
+
+3.9 Do 2.8
+
+3.10 Change the host ip address inside EV3PythonSocketClient.py to the value of your ROUTER's WAN ip address.  Or, if you are using DNS or DDNS, change the ip address to your own domain name.
+
+3.11 Do 2.10 to 2.15
